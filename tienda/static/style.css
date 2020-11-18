@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{font-size: 16px; font-family: Arial, Helvetica, sans-serif;}
+
+body{
+    font-size: 1rem;
+    
+    display: grid;
+    gap: 1em;
+}
+/* CABECERA */
+.cabecera{
+    color: white;
+    background-color: #232f3e;
+}
+
+/* Header */
+header{
+    font-size: 1rem;
+    height: 7em;
+    padding: 1em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVEGACION */
+.navegacion{
+    font-size: 1rem;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navegacion > ul{
+    background-color: lightslategrey;
+    display: flex;
+    gap: 1em;
+}
+.navegacion > ul > li{
+    list-style: none;
+}
+/* CONTENIDO */
+.contenido{
+    font-size: 1rem;
+    padding: 1em 10%;
+    height: 35em;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1em;
+}
+.productos{
+    font-size: 1em;
+    padding: 1em;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+.elemento{
+    font-size: 1em;
+    height: 15em;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: .7em;
+    background-color: lightgray;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+}
+.elemento > .imagen{
+    height: 100%;
+    width: 100%;
+}
+
+.elemento > .info{
+    padding: 1em;
+}
+
+.barra{
+    font-size: 1em;
+    padding: 1em;
+}
+
+/* FOOTER */
+.pie{
+    color: white;
+    background-color: #232f3e;
+    padding: 1em;
+    min-height: 20em;
+
+    display: flex;
+    justify-content: center;
+}

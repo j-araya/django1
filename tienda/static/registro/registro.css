@@ -1,0 +1,55 @@
+
+/* FORMULARIO DE REGISTRO */
+
+.registro form{
+    color: white;
+    font-size: 1em;
+    width: 43.75rem;
+    padding: 2em;
+    border: 3px solid #f1f1f1;
+    border-radius: 2em;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+}
+.registro-img{
+    grid-column: 1/3;
+    justify-self: center;
+}
+
+.registro-img img{
+    border-radius: 50%;
+    border: 5px solid #f1f1f1;
+}
+
+/* BOTON ENVIAR */
+.registro form button.submit{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 1em;
+    height: 3em;
+    background-color: rgb(16, 208, 16);
+    opacity: .7;
+}
+
+.registro form  button.submit:hover{
+    opacity: 1;
+}
+/* BOTON CANCELAR */
+.registro form button.back{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 1em;
+    height: 3em;
+    background-color: rgb(208, 16, 16);
+    opacity: .7;
+}
+
+.registro form button.back:hover{
+    opacity: 1;
+}

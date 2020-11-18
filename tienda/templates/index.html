@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Default {% endblock %} | Sitio Web</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="cabecera">
+        <header>
+            <h1>Titulo de la pagina</h1>
+        </header>
+        <nav class="navegacion">
+            <div class="busqueda">
+                <form action="">
+                    <label for="busqueda"><i>hola</i></label>
+                    <input type="search" name="buscar" id="busqueda" placeholder="Buscar">
+                </form>
+            </div>
+            <ul>
+                <li><a href="#"></a>Principal</li>
+                <li><a href="#"></a>Productos</li>
+                <li><a href="#"></a>Contactanos</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contenido">
+        {% block content %}{% endblock %}
+        <aside class="barra">
+            <div class="formulario">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quibusdam reiciendis repellendus exercitationem beatae animi ad laudantium reprehenderit cupiditate. Obcaecati adipisci natus vitae placeat facilis, debitis rem error tenetur rerum. Odio, quisquam labore sit aliquam impedit dolores ad ullam quaerat quo corrupti reprehenderit saepe provident distinctio ducimus voluptatem? Ab, non.
+            </div>
+        </aside>
+    </div>
+    <footer class="pie">
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati amet, quod molestiae pariatur harum omnis possimus cum at deleniti repudiandae molestias corrupti incidunt deserunt tempore perspiciatis inventore asperiores dolorum animi tenetur dolor! Magni dolor accusantium reprehenderit iusto ullam, culpa recusandae pariatur aliquam, commodi maxime laborum possimus obcaecati! Repellat, omnis dolores.
+        </div>
+    </footer>    
+</body>
+</html>
